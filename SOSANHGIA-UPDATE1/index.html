@@ -35,7 +35,14 @@
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script type="text/javascript">
       $(window).scroll(function(){
-        $("#banner").css("display", "inline");
+        if($(window).scrollTop()==0)
+        {
+            $("#banner").css("display", "none");
+        }
+        else
+        {
+            $("#banner").css("display", "inline");
+        }
     });
     </script>
 
