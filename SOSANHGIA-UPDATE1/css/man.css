@@ -819,7 +819,6 @@ legend {
   -ms-flex-align: center;
       align-items: center;
   font-family: 'Poppins', sans-serif;
-  background: url("../images/graffiti.jpg");
   background-size: cover;
   background-position: center center;
   padding: 15px;
@@ -973,8 +972,11 @@ legend {
   display: inline-block;
   padding: 0 15px;
   line-height: 32px;
-  color: #fff;
   border-radius: 16px;
   margin-right: 10px;
   margin-bottom: 10px;
+}
+
+#navbar{
+  display: none;
 }
