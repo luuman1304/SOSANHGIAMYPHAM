@@ -2687,7 +2687,7 @@ footer ul a:visited {
   font-size: 30px;
   color:white;
   text-align: center;
-  margin-top:14px;
+  margin-top:0px;
   float:left;
 }
 #menu-space{
@@ -2742,5 +2742,19 @@ footer ul a:visited {
 }
 .nav-bar{
   display:none;
+}
+#backup-home{
+  height:50px !important ;
+  width:50px !important;
+  background-color:black;
+  margin-left:1280px;
+  margin-bottom:10px;
+  text-align:center;
+  padding: 18px 10px;
+  border:none;
+  border-radius:50px;
+  opacity:.5;
+  overflow: visible !important;
+  position:fixed;
 }
 /*# sourceMappingURL=main.css.map */
