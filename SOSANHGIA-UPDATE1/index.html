@@ -27,6 +27,9 @@
     <link rel="stylesheet" href="css/base-man.css">
     <link rel="stylesheet" href="css/main1-man.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/Tao-instroduce.css">
+
 
     <!-- script
    ================================================== -->
@@ -37,12 +40,12 @@
     <script type="text/javascript">
       $(window).scroll(function(){
 
-       
 
         if($(window).scrollTop()==0)
         {
-            $("#navbar").css("display", "none");
+            $('#navbar').slideUp('slow','linear');
             $("#backup-home").css("display", "none");
+
 
         }
         else
@@ -51,7 +54,8 @@
             {
                 $("#backup-home").css("display", "inline");
             }
-            $("#navbar").css("display", "inline");
+            // $("#navbar").css("display", "inline");
+            $('#navbar').slideDown('slow','linear')
         }
 
     });
@@ -147,7 +151,7 @@
 
         </ul>
         <div class="home-scrolldown">
-            <a href="#about" class="scroll-icon smoothscroll">
+            <a href="#home-end" class="scroll-icon smoothscroll">
                 <span>Scroll Down</span>
                 <i class="icon-arrow-right" aria-hidden="true"></i>
             </a>
@@ -161,6 +165,7 @@
           </div>
         </fieldset>
       </form>
+          <div id="home-end" style="height:55px; margin-top:600px; position:relative"></div>
     </div>
     </section> <!-- end home -->  
 <!-- ================Man=================== -->
@@ -169,6 +174,9 @@
     <!-- about
     ================================================== -->
     <section id="about">
+        <div id="about-title">
+            <h1>DANH MỤC SẢN PHẨM</h1>
+        </div>
         <div id="danhmuc">
             <a href="#">
                 <div class="about-danhmuc-sanpham ">
@@ -272,6 +280,156 @@
 
     <!-- pricing
     ================================================== -->
+     <!-- <section id="pricing">
+        <div class="row pricing-content" style="
+    padding-top: 0px;
+    padding-left: auto;
+    padding-right: 0px;
+    padding-left: 75px;" >
+
+            <div class="col-four pricing-intro">
+                <h1 class="intro-header" data-aos="fade-up">Our Pricing Options</h1>
+
+                <p data-aos="fade-up">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium. 
+                </p>
+            </div>
+
+            <div class="col-eight pricing-table">
+                <div class="row">
+
+                    <div class="col-six plan-wrap">
+                        <div class="plan-block" data-aos="fade-up"> 
+
+                            <div class="plan-top-part">
+                                <h3 class="plan-block-title">Lite Plan</h3>
+                                <p class="plan-block-price"><sup>$</sup>25</p>
+                                <p class="plan-block-per">Per Month</p>
+                                <h1>Các Bước Nhận Chiết Khấu Từ GetDeal</h1>
+                            </div>
+
+                            <div class="plan-bottom-part">
+                                <ul class="plan-block-features">
+                                    <li><span>Bước 1: Tìm kiếm</span><br> <i style="font-size:2rem" class="fa fa-search">&nbsp;&nbsp;</i>Tìm kiếm sản phẩm bạn mong muốn</li>
+                                    <li><span>Bước 2: Nhấp link</span><br><i style="font-size:2rem" class="fa fa-mouse-pointer">&nbsp;&nbsp;</i>Nhấp vào link của chúng tôi mà mua sắm bình thường</li>                   
+                                    <li><span>Bước 3:Nhận chiết khấu</span><br><i style="font-size:2rem" class="fa fa-money">&nbsp;&nbsp;</i> Nhận ngay chiết khấu cho đơn hàng thành công</li>                         
+                                </ul>
+
+                                <a class="button button-primary large" href="">Bắt đầu ngay</a>
+                            </div>  
+                     
+                        </div>
+                    </div> --> <!-- end plan-wrap -->
+
+                   <!--  <div class="col-six plan-wrap">
+                        <div class="plan-block primary" data-aos="fade-up">
+
+                            <div class="plan-top-part">
+                                <h3 class="plan-block-title">Pro Plan</h3>
+                                <p class="plan-block-price"><sup>$</sup>50</p>
+                                <p class="plan-block-per">Per Month</p>
+                            </div>
+
+                            <div class="plan-bottom-part">
+                                <ul class="plan-block-features">
+                                    <li><span>5GB</span> Storage</li>
+                                    <li><span>20GB</span> Bandwidth</li>                      
+                                    <li><span>15</span> Databases</li>                        
+                                    <li><span>70</span> Email Accounts</li>
+                                </ul>
+
+                                <a class="button button-primary large" href="">Get Started</a>
+                            </div>
+
+                        </div>
+                    </div> --> <!-- end plan-wrap -->
+
+               <!--  </div>  -->              
+           <!--  </div> --> <!-- end pricing-table -->
+
+       <!--  </div> --> <!-- end pricing-content -->
+   <!--  </section> --> <!-- end pricing-->
+    <!-- introduce -->
+    <div id="instroduce">
+        <div class="instroduce-span">
+            <div class="instroduce-span-content">
+                <div class="instroduce-span-content-logo">
+                    <img src="images/shopping_online.png"  class="HinhAnh">
+                </div>
+                <div class="instroduce-span-content-content">
+                    <h1> MUA SẮM TẠI NHÀ</h1>
+                    <div>Bây gời bạn chỉ cần ngồi tại nhà và nhấp chuột bạn có thể đưa tất cả các loại mỹ phẩm về nhà mà không cần tốn thời gian ra ngoài tiệm</div>
+                </div>
+            </div>
+        </div>
+        <div class="instroduce-span">
+            <div class="instroduce-span-content">
+                <div class="instroduce-span-content-content">
+                    <h1> GIÁ RẺ BẤT NGỜ</h1>
+                    <div> Tiết kiệm lên đến <span style="color:red;font-size:20px">50%</span> so với các sản phẩm cùng loại bên loại thị trường trong khi chất lượng vẫn ổn định.</div>
+                </div>
+                <div class="instroduce-span-content-logo">
+                    <img src="images/50.jpg"  class="HinhAnh">
+                </div>
+            </div>
+        </div>
+        <div class="instroduce-span">
+            <div class="instroduce-span-content">
+                <div class="instroduce-span-content-logo">
+                    <img src="images/fast.png" class="HinhAnh" >
+                </div>
+                <div class="instroduce-span-content-content">
+                    <h1>NHANH CHÓNG TIỆN LỢI</h1>
+                    <div>Chỉ cần vài cú nhấp chuột bạn có thể so sánh các loại mỹ phẩm mình đang dùng đề biết được đâu là nơi bán sản phẩm dễ nhất. Vừa giúp bạn tiết kiệm chi phí vừa giảm thời gian so sánh giữa các trang bán hàng </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  end introduce -->
+    <!-- procedure -->
+    <div id="procedure">
+        <div id ="procedure-title">
+            <div id="procedure-title-content">
+                <div class="procedure-title-content-content">
+                    <h1> GETDEAL</h1>
+                    <div>Làm thế nào để mua sắm tại GetDeal</div>
+                </div>
+            </div>
+        </div>
+        <div id="procedure-content">
+            <div id="procedure-content-span">
+                <div class="procedure-content-span-span">
+                    <div class="procedure-content-span-span-logo">
+                        <span><i class="fa fa-search"></i></span>
+                    </div>
+                    <div class="procedure-content-span-span-content">
+                        <h1>Tìm Kiếm</h1>
+                        <div>Tìm kiếm sản phẩm bạn mong muốn mua</div>
+                    </div>
+                </div>
+                <div class="procedure-content-span-span">
+                    <div class="procedure-content-span-span-logo">
+                        <span><i class="fa fa-mouse-pointer" style="padding-left:10px"></i></span>
+                    </div>
+                    <div class="procedure-content-span-span-content">
+                        <h1>Nhấp Link</h1>
+                        <div>Nhấp vào link của chúng tôi và mua sắm trên website như bình thường</div>
+                    </div>
+                </div>
+                <div class="procedure-content-span-span">
+                    <div class="procedure-content-span-span-logo">
+                        <span><i class="fa fa-money"></i></span>
+                    </div>
+                    <div class="procedure-content-span-span-content">
+                        <h1>Nhận ưu đãi</h1>
+                        <div>Nhận ngay ưu đãi cho các sản phẩm</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- end procedure -->
+
 
     <!-- footer
     ================================================== -->
@@ -279,6 +437,9 @@
         <div class="container">
             <p class="m-0 text-center text-white">Copyright © GETDEAL TEAM</p>
             <p class="m-0 text-center text-white">Contact: 01234567</p>
+        </div>
+        <div id="go-top"  style="display: none;">
+            <a class="smoothscroll" title="Back to Top" href="#top"><i class="icon-arrow-up"></i></a>
         </div>
      <!-- /.container -->
     </footer>

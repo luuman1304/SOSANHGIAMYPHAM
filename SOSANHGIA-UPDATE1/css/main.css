@@ -741,7 +741,7 @@ input[type="submit"],
 input[type="reset"],
 input[type="button"] {
   display: inline-block;
-  font-family: "montserrat-regular", sans-serif;
+  font-family: 'Roboto', sans-serif/* "montserrat-regular", sans-serif */;
   font-size: 1.5rem;
   height: 5.4rem;
   line-height: calc(5.4rem - .6rem);
@@ -1958,7 +1958,8 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   font-size: 1.6rem;
   line-height: 2.4rem;
-}
+    /*   text-align: left;  thuoc tinh them */
+} 
 
 .pricing-table .plan-block .plan-block-features li {
   padding: 1.2rem 0;
@@ -1967,7 +1968,7 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
 
 .pricing-table .plan-block .plan-block-features li span {
   color: #39b54a;
-  font-family: "muli-bold", sans-serif;
+  font-family: 'Roboto', sans-serif /*"muli-bold", sans-serif*/;
 }
 
 .pricing-table .plan-block.primary {

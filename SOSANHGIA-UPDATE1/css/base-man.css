@@ -405,10 +405,10 @@ textarea {
 }
 
 .row .row {
-  width: auto;
+  width: 90%;/*gia tri ban dau auto*/
   max-width: none;
-  margin-left: -20px;
-  margin-right: -20px;
+  margin-left: auto;/*gia tri ban dau la -20*/
+  margin-right: auto;
 }
 
 [class*="col-"],
@@ -449,7 +449,7 @@ textarea {
 
 .col-six,
 .col-1-2 {
-  width: 50%;
+  width: 100% /* 50% */;
 }
 
 .col-seven {
